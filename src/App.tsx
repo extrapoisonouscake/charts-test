@@ -20,11 +20,7 @@ const MONTHS_COLORS: Record<string, string> = {
   November: "#fFFCC00",
   December: "#40E0D0",
 };
-const generateChart = (
-  data: PrecipitationRecord[],
-  isMobile: boolean,
-  shouldAnimateOnInit = true
-) => {
+const generateChart = (data: PrecipitationRecord[], isMobile: boolean) => {
   const ctx = document.getElementById("myChart") as HTMLCanvasElement;
 
   const chart = new Chart(ctx, {
@@ -53,7 +49,7 @@ const generateChart = (
           titleColor: "#000",
         },
       },
-      // animation: shouldAnimateOnInit ? undefined : false,
+
       maintainAspectRatio: false,
       responsive: true,
       indexAxis: isMobile ? "y" : "x",
@@ -94,7 +90,7 @@ export default function App() {
     if (!chart || !data) return;
 
     chart.destroy();
-    const newChart = generateChart(data, isMobile, false);
+    const newChart = generateChart(data, isMobile);
     setChart(newChart);
   }, [isMobile]);
   return (
