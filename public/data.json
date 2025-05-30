@@ -1,0 +1,52 @@
+{
+  "precipitation_data": [
+    {
+      "month": "January",
+      "precipitation_mm": 10
+    },
+    {
+      "month": "February",
+      "precipitation_mm": 8
+    },
+    {
+      "month": "March",
+      "precipitation_mm": 15
+    },
+    {
+      "month": "April",
+      "precipitation_mm": 25
+    },
+    {
+      "month": "May",
+      "precipitation_mm": 45
+    },
+    {
+      "month": "June",
+      "precipitation_mm": 60
+    },
+    {
+      "month": "July",
+      "precipitation_mm": 55
+    },
+    {
+      "month": "August",
+      "precipitation_mm": 50
+    },
+    {
+      "month": "September",
+      "precipitation_mm": 35
+    },
+    {
+      "month": "October",
+      "precipitation_mm": 25
+    },
+    {
+      "month": "November",
+      "precipitation_mm": 15
+    },
+    {
+      "month": "December",
+      "precipitation_mm": 12
+    }
+  ]
+}
